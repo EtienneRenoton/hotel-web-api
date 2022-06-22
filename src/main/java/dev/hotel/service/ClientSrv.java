@@ -5,11 +5,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import dev.hotel.entite.Client;
 import dev.hotel.repository.ClientRepository;
 
+@Service
 public class ClientSrv {
 
 	private ClientRepository clientRepo;
